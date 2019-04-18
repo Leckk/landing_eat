@@ -190,11 +190,11 @@ h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px
 .box-hover:hover, .box-hover:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -ms-transform: translate(0, -15px); }
 .wrapper { height: 650px; }
 .nopadding { padding: 0; }
-.inner { padding-top: 170px; padding-bottom: 170px }
+.inner { padding-top: 50px; padding-bottom: 50px }
 /* ==========================================================================
 Navigation
 ========================================================================== */
-nav { background-color: #242830; margin-top: -1px; }
+nav { background-color: #309383; margin-top: -1px; }
 nav ul { list-style: none; padding: 0; }
 nav ul li { color: rgba(255, 255, 255, 0.6); display: block; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
 nav ul li:last-child { border: none; }
