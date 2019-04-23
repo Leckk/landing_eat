@@ -32,6 +32,26 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
+	$('.wp7').waypoint(function() {
+		$('.wp7').addClass('animated fadeInDown slow');
+	}, {
+		offset: '100%'
+	});
+	$('.wp8').waypoint(function() {
+		$('.wp8').addClass('animated fadeInUp slow');
+	}, {
+		offset: '110%'
+	});
+	$('.wp6').waypoint(function() {
+		$('.wp6').addClass('animated fadeInDown');
+	}, {
+		offset: '75%'
+	});
+	$('.wp6').waypoint(function() {
+		$('.wp6').addClass('animated fadeInDown');
+	}, {
+		offset: '75%'
+	});
 
 });
 

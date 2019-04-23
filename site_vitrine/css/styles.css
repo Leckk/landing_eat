@@ -5,7 +5,8 @@ HTML5 display definitions
 ========================================================================== */
  
 /* * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */
- 
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 /* * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -23,19 +24,18 @@ html, html a { -webkit-font-smoothing: antialiased;scroll-behavior: smooth; text
 /* * Addresses `font-family` inconsistency between `textarea` and other form
 * elements. */
 html, button, input, select, textarea { 
-	font-family: 'Varela Round'; 
 	overflow-x: hidden
 	sans-serif; 
 }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 body { 
 	margin: 0; 
-	font-family: 'josephine'; 
 	padding-left:8;
 	margin-left:15;
 	padding: 20;
-	overflow-x: hidden
-	sans-serif; 
+	overflow-x: hidden;
+	font-family: 'Karla', sans-serif;
+
 }
 /* ==========================================================================
 Links
@@ -50,8 +50,8 @@ Typography
 /* * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome. */
 
-h1 { font-size: 2.5em; margin: 0.67em 0; color: #353535; font-family: 'Josefin Slab', serif;}
-h2 { font-size: 2.1em; margin: 0.83em 0; font-family: 'Josefin Slab', serif;}
+h1 { font-size: 2.5em; margin: 0.67em 0; color: #353535;}
+h2 { font-size: 2.1em; margin: 0.83em 0; }
 h3 { font-size: 1.17em; margin: 1em 0; }
 h4 { font-size: 1em; margin: 1.33em 0; }
 h5 { font-size: 0.83em; margin: 1.67em 0; }
@@ -68,7 +68,7 @@ mark { background: #ff0; color: #000; }
 /* * Addresses margins set differently in IE 6/7. */
 p, pre { margin: 1em 0; }
 /* * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome. */
-code, kbd, pre, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+code, kbd, pre, samp {  font-size: 1em; }
 /* * Improves readability of pre-formatted text in all browsers. */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 /* * Addresses CSS quotes not supported in IE 6/7. */
@@ -190,7 +190,7 @@ h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px
 .box-hover:hover, .box-hover:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -ms-transform: translate(0, -15px); }
 .wrapper { height: 650px; }
 .nopadding { padding: 0; }
-.inner { padding-top: 50px; padding-bottom: 50px }
+.inner { padding-top: 50px; padding-bottom: 50px; height: 90vh; }
 /* ==========================================================================
 Navigation
 ========================================================================== */
@@ -355,7 +355,7 @@ ul.slides li { margin-bottom: 20px; }
 /* ==========================================================================
 Waypoints
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7 { visibility: hidden; }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { 
 	visibility: visible; 
 }
@@ -376,6 +376,7 @@ Waypoints
 	background-position: center center;
 	margin: 0px;
 	position: relative;
+	height: 90vh;
 }
 
 .text-white{
@@ -404,30 +405,22 @@ Waypoints
 }
 
 .title {
-	position: relative;
-	top: -150px;
-	font-size: 75px;
-	font-weight: bold;
-	color: white;
-	margin: 5px;
-	padding: 5px;
+	font-size: 80px;
+	color: #fff;
+	letter-spacing: 5px;
 }
 
-.subTitle {
-	font-size: 22px;
-	position: relative;
-	top: -170px;
-	color: white;
-	font-style: italic;
-	font-weight: bold;
-	margin: 5px;
-	padding: 5px;
-	z-index: 0;
-
+.subtitle {
+    font-size: 25px;
+    color: #f0f2f4;
+    border-top: 2px solid;
+    max-width: 70%;
+    line-height: 32px;
+    margin: auto;
 }
 
 .overlay {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.7);
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -463,19 +456,92 @@ Waypoints
 }
 
 .logo {
-	margin: 15px;
+	width: 100px;
+	position: absolute;
+	top: -15px;
 }
 
 .navbar {
 	border: 0px solid;
 	margin: 0;
-	background-color: rgb(78, 129, 113);
+	background-color:#3C8874;
+	height: 10vh;
+	border-radius: 0;
 }
 .margin {
 	margin: 5px;
 }
 
 .motto {
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #000;
+	background: #f3f5f8;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 5px solid #000;
+	border-bottom: 5px solid;
+	padding: 15px;
+	margin-bottom: 0;
+}
+.input {
+	height: 50px;
+	width: 60%;
+	padding-left: 5px;
+	border: 0px solid;
+	border-radius: 8px 0px 0px 8px;
+
+}
+button.btn.btn-success {
+	height: 50px;
+	padding: 0 14px;
+	border: 0px solid;
+	margin-left: -5px;
+	margin-top: -2.5px;
+	border-radius: 0 8px 8px 0px;
+}
+.bg-text{
+	color: #fff;
+	font-size: 18px;
+	text-align: justify;
+}
+.flex{
+	display: flex;
+	align-items: center;
+	margin-top: 15%;
+}
+@media (max-width: 768px) { 
+	.title{
+		font-size: 40px;
+	}
+	.subtitle{
+		font-size: 20px
+	}
+	.flex {
+    flex-direction: column;
+}
+.bg-text {
+	color: #fff;
+	font-size: 18px;
+	text-align: justify;
+	max-width: 75%;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.full-width-mobile{
+	width: 100%;
+}
+h2 {
+	font-size: 18px;
+}
+
+.swag h1 {
+	color: #000;
 	font-size: 30px;
-	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
 }
