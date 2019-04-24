@@ -226,7 +226,6 @@ Hero
 	height: auto;
 }
 
-
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
@@ -463,10 +462,10 @@ Waypoints
 
 .navbar {
 	border: 0px solid;
-	margin: 0;
 	background-color:#3C8874;
 	height: 10vh;
 	border-radius: 0;
+	margin-bottom: 0px;
 }
 .margin {
 	margin: 5px;
@@ -544,4 +543,12 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: 0px;
 }
+}
+
+.objectif {
+	font-size: 16px;
+}
+
+.description {
+	font-size: 15px;
 }
