@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EatforGood</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Shadows+Into+Light+Two" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600|Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -16,12 +16,31 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
   </head>
-      <body>   
+      <body>
+          <div class="fab">
+              <span class="fab-action-button">
+                    <i class="fab-action-button__icon"></i>
+                </span>
+              <ul class="fab-buttons">
+                <li class="fab-buttons__item">
+                  <a href="#" class="fab-buttons__link" data-tooltip="Facebook">
+                    <i class="icon-material icon-material_fb"></i>
+                  </a>
+                </li>
+                <li class="fab-buttons__item">
+                  <a href="#" class="fab-buttons__link" data-tooltip="Linkedin">
+                    <i class="icon-material icon-material_li"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <nav class="navbar">  
-                <img class="logo" src="img/logo_transparent.png" />      
+                <img class="logo" alt="logo" src="img/logo/logo_transparent.png" />      
                 <div class="row displayFlexRow">
-                  
-                    <div class="col-sm-2 col-sm-offset-8">
+                    <div class="col-sm-2 col-sm-offset-6" style="color:white; margin-top:15px">
+                      Prochainement disponible sur 
+                    </div>
+                    <div class="col-sm-2">
                       <img 
                       style="height:40px; margin-top: 20px" 
                       src="img/disponible-sur-android.png" 
@@ -45,10 +64,13 @@
                   <h1 class="animated fadeInDown"><span class="title">EatforGood</span></h1>
                     <p class="animated fadeInUp delay-1s subtitle"> L'application qui calcule l'empreinte carbone de tes fruits et légumes </p>
                       <div class="row flex">
-                        <div class="col-md-5">
-                          <p class="bg-text"> Intéressé par le concept? On te prévient lorsque l'appli est disponible sur les stores!</p>  
+                        <div class="col-md-6">
+                          <p class="bg-text"> Intéressé par le concept? On te préviendra lorsque l'appli sera disponible sur les stores!</p>  
                         </div>
-                        <div class="col-md-7 full-width-mobile">
+                        <div class="col-md-4 col-md-offset-2">
+                          <a class="contact" href="mailto:eatforgood.pro@gmail.com"> Contactez-nous </a>
+                        </div>
+                        <!-- <div class="col-md-7 full-width-mobile">
                           <form action="#">     
                             <input
                               class="input"
@@ -64,7 +86,7 @@
                               Envoyer
                             </button>
                           </form>
-                        </div>
+                        </div> -->
                       </div>
                 </div>
                 <p class="motto"> 
@@ -115,22 +137,22 @@
                 <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
                 <div class="row">
                   <div class="col-md-4">
-                    <img class="wp7  delay-1s" src="img/screen_home.png" style="width:100%"/>
+                    <img class="wp7  delay-1s" alt="screen" src="img/screen_home.png" style="width:100%"/>
                   </div>
                   <div class="col-md-4">
-                    <img class="wp7  delay-1s" src="img/screen_account.png" style="width:100%"/>
+                    <img class="wp7  delay-1s" alt="screen" src="img/screen_account.png" style="width:100%"/>
                   </div>
                   <div class="col-md-4">
-                    <img class="wp7  delay-1s" src="img/screen_modal.png" style="width:100%"/>
+                    <img class="wp7  delay-1s" alt="screen" src="img/screen_modal.png" style="width:100%"/>
                   </div>
                   <div class="col-md-4">
-                    <img class="wp8  delay-1s" src="img/screen_list.png" style="width:100%"/>
+                    <img class="wp8  delay-1s" alt="screen" src="img/screen_list.png" style="width:100%"/>
                   </div>
                   <div class="col-md-4">
-                    <img class="wp8  delay-1s" src="img/screen_search_input.png" style="width:100%"/>
+                    <img class="wp8  delay-1s"  alt="screen"src="img/screen_search_input.png" style="width:100%"/>
                   </div>
                   <div class="col-md-4">
-                    <img class="wp8  delay-1s"  src="img/screen_account.png" style="width:100%"/>
+                    <img class="wp8  delay-1s" alt="screen" src="img/screen_account.png" style="width:100%"/>
                   </div>
                 </div>
               </div>
@@ -145,8 +167,7 @@
             <div class="row">
               <div class="col-md-6">
                 <ul class="legals">
-                  <li><a href="#">Terms &amp; Conditions</a></li>
-                  <li><a href="#">Legals</a></li>
+                  <li><a href="#">Mentions légales</a></li>
                 </ul>
               </div>
               <div class="col-md-6 credit">
